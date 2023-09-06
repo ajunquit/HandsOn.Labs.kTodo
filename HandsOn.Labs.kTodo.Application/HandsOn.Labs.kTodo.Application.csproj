@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Board\Commands\" />
+    <Folder Include="Features\Board\Queries\" />
+    <Folder Include="Features\List\Commands\" />
+    <Folder Include="Features\List\Queries\" />
+    <Folder Include="Features\Task\Commands\" />
+    <Folder Include="Features\Task\Queries\" />
+    <Folder Include="Features\User\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.7.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HandsOn.Labs.kTodo.Core\HandsOn.Labs.kTodo.Core.csproj" />
+    <ProjectReference Include="..\HandsOn.Labs.kTodo.Transversal.Common\HandsOn.Labs.kTodo.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>
